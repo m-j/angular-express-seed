@@ -8,6 +8,8 @@
     "license": "MIT",
     "dependencies" : {
         "angular" : "*",
-        "requirejs" : "*"
+        "requirejs" : "*",
+        "ui-router" : "*",
+        "restangular" : "*"
     }
 }

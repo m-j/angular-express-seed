@@ -1,3 +1,3 @@
-require([],function(){
-    console.log('dupa')
+require(['angular', 'app/aes'],function(){
+    angular.bootstrap(window.document, ['aes']);
 })
