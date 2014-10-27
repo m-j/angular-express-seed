@@ -5,12 +5,14 @@ aes.requirejsConfig = function () {
             "angular": "libs/angular/angular",
             "restangular": "libs/restangular/dist/restangular",
             "ui-router": "libs/ui-router/release/angular-ui-router",
-            "lodash": "libs/lodash/dist/lodash"
+            "lodash": "libs/lodash/dist/lodash",
+            "angular-mocks" : "libs/angular-mocks/angular-mocks"
         },
         shim: {
             angular: { exports: 'angular', deps: ['lodash']},
             restangular: ['angular'],
-            "ui-router": ['angular']
+            "ui-router": ['angular'],
+            "angular-mocks" : { exports : 'angular.mock', deps : ['angular']}
         }
     }
 }

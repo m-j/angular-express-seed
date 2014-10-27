@@ -1,15 +1,16 @@
 {
-    "name": "angular-express-seed",
-    "version": "0.0.0",
-    "homepage": "https://github.com/m-j/angular-express-seed",
-    "authors": [
-        "m-j <jamiolkowski.mateusz@gmail.com>"
-    ],
-    "license": "MIT",
-    "dependencies" : {
-        "angular" : "1.3.0",
-        "requirejs" : " 2.1.15",
-        "ui-router" : "0.2.11",
-        "restangular" : "1.4.0"
-    }
+  "name": "angular-express-seed",
+  "version": "0.0.0",
+  "homepage": "https://github.com/m-j/angular-express-seed",
+  "authors": [
+    "m-j <jamiolkowski.mateusz@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.3.0",
+    "requirejs": " 2.1.15",
+    "ui-router": "0.2.11",
+    "restangular": "1.4.0",
+    "angular-mocks": "~1.3.0"
+  }
 }

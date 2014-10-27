@@ -1,5 +1,5 @@
 var allTestFiles = [];
-var TEST_REGEXP = /.*Spec.js$/;
+var TEST_REGEXP = /tests\/client\/unit\/.*Spec.js$/;
 
 var pathToModule = function(path) {
     return path.replace(/^\/base\//, '../').replace(/\.js$/, '');
@@ -14,9 +14,6 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 (function(){
     var config = aes.requirejsConfig()
-
-//    config.paths['angularMocks'] =
-//    config.shim['angularMocks']
 
     config.baseUrl = '/base/client/'
     config.deps = allTestFiles
