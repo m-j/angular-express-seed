@@ -7,6 +7,9 @@
 <body>
     <script src="libs/requirejs/require.js" data-main="main.js"></script>
     <script src="requirejsConfig.js"></script>
+    <script>
+        requirejs.config(aes.requirejsConfig())
+    </script>
 
     <main ui-view>
 
