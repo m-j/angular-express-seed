@@ -16,11 +16,8 @@ gulp.task('test', function (done) {
     }, done).start();
 });
 
-gulp.task('bundle:dist', function(cb) {
-
+gulp.task('bundle:dist', function() {
     var js = gulp.src('client/main.js')
-        //.pipe(cached('scripts'))
-        //.pipe(remember('scripts'))
         .pipe(amdOptimize("main",
             {
                 name: "main",
@@ -30,5 +27,12 @@ gulp.task('bundle:dist', function(cb) {
             }
         ))
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('target'));
-})
+        .pipe(gulp.dest('target/dist'));
+});
+
+gulp.task('copy-all:dist', function () {
+    gulp.src('./client/**')
+        .pipe(gulp.dest('./target/dist'))
+});
+
+gulp.task('build:dist', ['copy-all:dist', 'bundle:dist']);
