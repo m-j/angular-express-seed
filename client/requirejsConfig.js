@@ -18,3 +18,5 @@ aes.requirejsConfig = function () {
         }
     }
 }
+
+if(typeof module !== 'undefined' && module.exports) { module.exports = aes.requirejsConfig }

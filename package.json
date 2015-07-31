@@ -23,7 +23,9 @@
     "serve-static": "^1.6.2"
   },
   "devDependencies": {
+    "amd-optimize": "^0.5.0",
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "karma": "^0.13.3",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.3.6",
